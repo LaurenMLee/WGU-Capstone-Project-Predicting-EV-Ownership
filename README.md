@@ -1,5 +1,5 @@
 # WGU-Capstone-Project-Predicting-EV-Ownership
-This repo is created to store artifacts and code related to a Data Analytics/ Maching Learning Capstone Project
+This repo is created to store artifacts and code related to a Data Analytics/ Machine Learning Capstone Project
 
 Raw data sourced from 
 
