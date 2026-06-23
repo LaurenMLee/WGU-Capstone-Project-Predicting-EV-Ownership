@@ -21,6 +21,7 @@ def clean_charging_stations_data():
         subset=["Zip_Code", "Program", "Access"]
     )
 
+
     # Format Zip Codes to match other tables- Format as strings, remove extra spaces and ensure all are 5 digits
     charging_station_data["Zip_Code"] = (charging_station_data["Zip_Code"]
         .astype(str)

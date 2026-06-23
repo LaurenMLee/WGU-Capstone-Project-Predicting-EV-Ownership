@@ -17,6 +17,9 @@ def clean_monthly_registrations_data():
         subset=["Year_Month","Fuel_Category","Zip_Code", "Count"]
     )
 
+    # Display  rows after deleting rows with missing values
+    print("Rows after missing values removed:", len(monthly_registration_data))
+
     # Format Zip Codes to match other tables Format as strings, remove extra spaces and ensure all are 5 digits
     monthly_registration_data["Zip_Code"] = (monthly_registration_data["Zip_Code"]
         .astype(str)
