@@ -2,7 +2,8 @@ import pandas as pd
 
 def clean_zipcode_data():
     # Load raw data
-    zip_code_mapping= pd.read_csv("data/raw_data/Zip_Code_Lookup_Table_raw.csv")
+    zip_code_mapping= pd.read_csv("data/raw_data/Zip_Code_Lookup_Table_raw.csv",
+    dtype={"Zip Code": str})
 
     # Cleanup column names
     zip_code_mapping.columns = zip_code_mapping.columns.str.strip()
@@ -13,6 +14,13 @@ def clean_zipcode_data():
     # Remove rows with missing values
     zip_code_mapping = zip_code_mapping.dropna(subset=["Zip_Code", "City", "County"]
     )
+
+    # Format Zip Codes to match other tables- Format as strings, remove extra spaces and ensure all are 5 digits
+    zip_code_mapping["Zip_Code"] = (zip_code_mapping["Zip_Code"]
+        .astype(str)
+        .str.strip()
+        .str.zfill(5)
+        )
 
     # Remove duplicate zip codes
     zip_code_mapping = zip_code_mapping.drop_duplicates(subset=["Zip_Code"])
