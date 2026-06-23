@@ -26,16 +26,26 @@ def clean_monthly_registrations_data():
         .str.strip()
         .str.zfill(5)
     )
-
+    # Rename Year_Month to Month_Registered
+    monthly_registration_data = monthly_registration_data.rename(
+        columns={"Year_Month": "Month_Registered"}
+    )
     # Cleanup values in fuel category column to remove differentiation between Plug-In and Plug-in to normalize the data.
 
     monthly_registration_data["Fuel_Category"] = monthly_registration_data["Fuel_Category"].replace({
     "Plug-in Hybrid" : "Plug-In Hybrid"})
 
+    # Convert Month_Registered to full date using the last day of the month
+    monthly_registration_data["Month_Registered"] = (
+            pd.to_datetime(monthly_registration_data["Month_Registered"], format="%Y/%m")
+            + pd.offsets.MonthEnd(0)
+    )
+
+
     # Combine total EV counts by month/year and zipcode into new column called Total_EV_Registrations
 
     monthly_registration_data = monthly_registration_data.groupby(
-        ["Year_Month", "Zip_Code"],
+        ["Month_Registered", "Zip_Code"],
         as_index=False
     )["Count"].sum()
 
@@ -44,6 +54,8 @@ def clean_monthly_registrations_data():
 )
     # Display count after combining Full Electric and Plug In Hybrid registrations
     print("Rows after combining fuel categories", len(monthly_registration_data))
+
+
     # Add City/ County Names to zip codes
 
 
