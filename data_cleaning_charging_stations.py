@@ -12,6 +12,16 @@ def clean_charging_stations_data():
     # Display starting number of rows
     print("Starting Rows:", len(charging_station_data))
 
+    # Rename Zip code column to match other files
+    charging_station_data = charging_station_data.rename(columns={"ZipCode": "Zip_Code"})
+
+    # Remove rows with missing values in relevant columns
+    charging_station_data = charging_station_data.dropna(
+        subset=["Zip_Code", "Program", "Access"]
+    )
+    # Display starting number of rows
+    print("Rows after removing missing values:", len(charging_station_data))
+
     # Define which programs to include from dataset
     relevant_location_types =  ["Electric Vehicle Charging Stations", "Electric Vehicle Infrastructure Program (EVIP)", "Electric Vehicle Supply Equipment Tax Credit Program"
     ]
