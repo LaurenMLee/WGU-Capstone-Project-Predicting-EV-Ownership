@@ -5351,7 +5351,7 @@ Month_Registered,Zip_Code,City,County,Actual_EV_Registrations,Predicted_EV_Regis
 2025-04-30,21298,Baltimore,Baltimore City,0,0
 2025-05-31,21298,Baltimore,Baltimore City,0,0
 2025-06-30,21298,Baltimore,Baltimore City,0,0
-compare_predictions_to_availability.py,compare_predictions_to_availability.py,compare_predictions_to_availability.py,compare_predictions_to_availability.py,compare_predictions_to_availability.py,compare_predictions_to_availability.py
+2025-07-31,21298,Baltimore,Baltimore City,0,0
 2025-08-31,21298,Baltimore,Baltimore City,0,0
 2025-09-30,21298,Baltimore,Baltimore City,0,0
 2025-10-31,21298,Baltimore,Baltimore City,0,0
