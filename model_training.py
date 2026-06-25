@@ -190,28 +190,171 @@ def train_ev_registration_model():
     print("Root Mean Squared Error:", round(rmse, 2))
     print("R-squared Score:", round(r2, 4))
 
-    # Save predictions/results
-    results = monthly_data.loc[
+    # Save current/latest predictions and future predictions in one file
+
+    # Current/latest prediction results from the testing data
+    current_results = monthly_data.loc[
         test_rows,
-        ["Month_Registered", "Zip_Code", "City", "County", "Total_EV_Registrations"]
+        ["Month_Registered"] + feature_columns + ["Total_EV_Registrations"]
     ].copy()
 
-    results = results.rename(
+    current_results = current_results.rename(
         columns={"Total_EV_Registrations": "Actual_EV_Registrations"}
     )
 
-    results["Predicted_EV_Registrations"] = predictions.round(0).astype(int)
+    current_results["Predicted_EV_Registrations"] = predictions.round(0).astype(int)
+    current_results["Prediction_Type"] = "Current/latest"
+    current_results["Prediction_Horizon_Years"] = 0
 
-    os.makedirs("results/tables", exist_ok=True)
+    # Create future predictions for 1 year, 3 years, and 5 years
+    future_months = 60
 
-    results.to_csv(
-        "results/tables/model_test_predictions.csv",
-        index=False
-    )
+    future_months_to_save = {
+        12: "1-year future",
+        36: "3-year future",
+        60: "5-year future"
+    }
 
-    print("Model test predictions saved to results/tables/model_test_predictions.csv")
+    current_data = monthly_data.copy()
+    future_predictions_list = []
 
-    return model
+    for month_number in range(1, future_months + 1):
+
+        # Get the most recent row for each ZIP code
+        future_data = current_data.sort_values(
+            ["Zip_Code", "Month_Registered"]
+        ).groupby("Zip_Code").tail(1).copy()
+
+        # Move each ZIP code forward by one month
+        future_data["Month_Registered"] = (
+            future_data["Month_Registered"] + pd.DateOffset(months=1)
+        ) + pd.offsets.MonthEnd(0)
+
+        # Update date-based features
+        future_data["Year"] = future_data["Month_Registered"].dt.year
+        future_data["Month"] = future_data["Month_Registered"].dt.month
+
+        future_data["Months_Since_Start"] = (
+            (future_data["Year"] - monthly_data["Year"].min()) * 12
+            + future_data["Month"]
+        )
+
+        future_data["Months_Of_History"] = future_data["Months_Of_History"] + 1
+
+        # Previous month
+        future_data["Previous_Month_Registrations"] = future_data[
+            "Total_EV_Registrations"
+        ]
+
+        # Current Month in Previous year
+        future_data["Current_Month_Previous_Year"] = future_data.apply(
+            lambda row: current_data[
+                (current_data["Zip_Code"] == row["Zip_Code"])
+                & (current_data["Year"] == row["Year"] - 1)
+                & (current_data["Month"] == row["Month"])
+                ]["Total_EV_Registrations"].sum(),
+            axis=1
+        )
+
+        # 3 Previous Months AVG
+        future_data["Three_Previous_Months_AVG"] = future_data["Zip_Code"].apply(
+            lambda zip_code: current_data[current_data["Zip_Code"] == zip_code]
+            .sort_values("Month_Registered")
+            .tail(3)["Total_EV_Registrations"]
+            .mean()
+        )
+
+        # 6 Previous Months AVG
+        future_data["Six_Previous_Months_AVG"] = future_data["Zip_Code"].apply(
+            lambda zip_code: current_data[current_data["Zip_Code"] == zip_code]
+            .sort_values("Month_Registered")
+            .tail(6)["Total_EV_Registrations"]
+            .mean()
+        )
+
+        # 12 Previous Months AVG
+        future_data["Twelve_Previous_Months_AVG"] = future_data["Zip_Code"].apply(
+            lambda zip_code: current_data[current_data["Zip_Code"] == zip_code]
+            .sort_values("Month_Registered")
+            .tail(12)["Total_EV_Registrations"]
+            .mean()
+        )
+        # Make future predictions
+        X_future = future_data[feature_columns]
+        future_predictions = model.predict(X_future)
+
+        future_data["Predicted_EV_Registrations"] = (
+            future_predictions.round(0).astype(int)
+        )
+
+        # Use predicted value as the registration value for the next future month
+        future_data["Total_EV_Registrations"] = future_data[
+            "Predicted_EV_Registrations"
+        ]
+
+        # Save only the 1-year, 3-year, and 5-year future prediction months
+        if month_number in future_months_to_save:
+            future_results = future_data[
+                ["Month_Registered"] + feature_columns
+                ].copy()
+
+            future_results["Actual_EV_Registrations"] = np.nan
+
+            future_results["Predicted_EV_Registrations"] = future_data[
+                "Predicted_EV_Registrations"
+            ]
+
+            future_results["Prediction_Type"] = future_months_to_save[month_number]
+            future_results["Prediction_Horizon_Years"] = int(month_number / 12)
+
+            future_predictions_list.append(future_results)
+
+        # Add this future month to the data so the next future month can use it
+        current_data = pd.concat(
+            [current_data, future_data],
+            ignore_index=True
+        )
+
+        # Combine current/latest, 1-year, 3-year, and 5-year predictions
+        all_predictions = pd.concat(
+            [current_results] + future_predictions_list,
+            ignore_index=True
+        )
+
+        # Arrange column order
+        all_predictions = all_predictions[
+            [
+                "Prediction_Type",
+                "Prediction_Horizon_Years",
+                "Month_Registered",
+                "Zip_Code",
+                "City",
+                "County",
+                "Year",
+                "Month",
+                "Months_Since_Start",
+                "Months_Of_History",
+                "Previous_Month_Registrations",
+                "Current_Month_Previous_Year",
+                "Three_Previous_Months_AVG",
+                "Six_Previous_Months_AVG",
+                "Twelve_Previous_Months_AVG",
+                "Actual_EV_Registrations",
+                "Predicted_EV_Registrations"
+            ]
+        ]
+
+        os.makedirs("results/tables", exist_ok=True)
+
+        all_predictions.to_csv(
+            "results/tables/ev_registration_predictions.csv",
+            index=False
+        )
+
+        print("EV registration predictions saved to results/tables/ev_registration_predictions.csv")
+
+        return model
+
 
 
 
