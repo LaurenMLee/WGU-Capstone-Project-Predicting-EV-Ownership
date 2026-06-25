@@ -76,13 +76,13 @@ def compare_predictions_to_availability():
         ascending=False
     ).reset_index(drop=True)
 
-    # Display top 10 zip codes with highest need
+    # Display top 20 zip codes with highest need
 
-    top_10_zipcodes = comparison.head(10)
+    top_20_zipcodes = comparison.head(20)
 
-    print("\nTop 10 ZIP codes by charging need score:")
+    print("\nTop 20 ZIP codes by charging need score:")
     print(
-        top_10_zipcodes[
+        top_20_zipcodes[
             [
                 "Zip_Code",
                 "City",
