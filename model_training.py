@@ -34,7 +34,7 @@ def train_ev_registration_model():
 
 
 
-    # Determine how many months of data each zipcode has
+    # Count the no of months of data each zipcode has
     monthly_data["Months_Of_History"] = monthly_data.groupby("Zip_Code").cumcount()
 
     # Create Features
@@ -190,33 +190,46 @@ def train_ev_registration_model():
     print("Root Mean Squared Error:", round(rmse, 2))
     print("R-squared Score:", round(r2, 4))
 
-    # Save current/latest predictions and future predictions in one file
 
-    # Current/latest prediction results from the testing data
+
+    # Create current/latest prediction results from the testing data
     current_results = monthly_data.loc[
         test_rows,
-        ["Month_Registered"] + feature_columns + ["Total_EV_Registrations"]
+        ["Month_Registered", "Zip_Code", "City", "County", "Total_EV_Registrations"]
     ].copy()
 
     current_results = current_results.rename(
-        columns={"Total_EV_Registrations": "Actual_EV_Registrations"}
+        columns={"Total_EV_Registrations": "Current_Actual_EV_Registrations"}
     )
 
-    current_results["Predicted_EV_Registrations"] = predictions.round(0).astype(int)
-    current_results["Prediction_Type"] = "Current/latest"
-    current_results["Prediction_Horizon_Years"] = 0
+    current_results["Current_Predicted_EV_Registrations"] = (
+        predictions.round(0).astype(int)
+    )
+
+    # Keep most current prediction for each ZIP code
+    current_results = current_results.sort_values(
+        ["Zip_Code", "Month_Registered"]
+    ).groupby("Zip_Code").tail(1).copy()
+
+    current_results = current_results.rename(
+        columns={"Month_Registered": "Current_Prediction_Month"}
+    )
 
     # Create future predictions for 1 year, 3 years, and 5 years
     future_months = 60
 
     future_months_to_save = {
-        12: "1-year future",
-        36: "3-year future",
-        60: "5-year future"
+        12: "Predicted_EV_Registrations_1_Year",
+        36: "Predicted_EV_Registrations_3_Years",
+        60: "Predicted_EV_Registrations_5_Years"
     }
 
     current_data = monthly_data.copy()
-    future_predictions_list = []
+
+    current_results["Predicted_EV_Registrations_1_Year"] = np.nan
+    current_results["Predicted_EV_Registrations_3_Years"] = np.nan
+    current_results["Predicted_EV_Registrations_5_Years"] = np.nan
+
 
     for month_number in range(1, future_months + 1):
 
@@ -252,7 +265,7 @@ def train_ev_registration_model():
                 (current_data["Zip_Code"] == row["Zip_Code"])
                 & (current_data["Year"] == row["Year"] - 1)
                 & (current_data["Month"] == row["Month"])
-                ]["Total_EV_Registrations"].sum(),
+            ]["Total_EV_Registrations"].sum(),
             axis=1
         )
 
@@ -279,6 +292,7 @@ def train_ev_registration_model():
             .tail(12)["Total_EV_Registrations"]
             .mean()
         )
+
         # Make future predictions
         X_future = future_data[feature_columns]
         future_predictions = model.predict(X_future)
@@ -287,27 +301,24 @@ def train_ev_registration_model():
             future_predictions.round(0).astype(int)
         )
 
+        # Save the 1-year, 3-year, and 5-year predictions
+        if month_number in future_months_to_save:
+            column_name = future_months_to_save[month_number]
+
+            future_prediction_lookup = future_data.set_index("Zip_Code")[
+                "Predicted_EV_Registrations"
+            ]
+
+            current_results[column_name] = current_results["Zip_Code"].map(
+                future_prediction_lookup
+            )
+
+            print(column_name, "saved")
+
         # Use predicted value as the registration value for the next future month
         future_data["Total_EV_Registrations"] = future_data[
             "Predicted_EV_Registrations"
         ]
-
-        # Save only the 1-year, 3-year, and 5-year future prediction months
-        if month_number in future_months_to_save:
-            future_results = future_data[
-                ["Month_Registered"] + feature_columns
-                ].copy()
-
-            future_results["Actual_EV_Registrations"] = np.nan
-
-            future_results["Predicted_EV_Registrations"] = future_data[
-                "Predicted_EV_Registrations"
-            ]
-
-            future_results["Prediction_Type"] = future_months_to_save[month_number]
-            future_results["Prediction_Horizon_Years"] = int(month_number / 12)
-
-            future_predictions_list.append(future_results)
 
         # Add this future month to the data so the next future month can use it
         current_data = pd.concat(
@@ -315,38 +326,24 @@ def train_ev_registration_model():
             ignore_index=True
         )
 
-        # Combine current/latest, 1-year, 3-year, and 5-year predictions
-        all_predictions = pd.concat(
-            [current_results] + future_predictions_list,
-            ignore_index=True
-        )
-
-        # Arrange column order
-        all_predictions = all_predictions[
+        # Arrange final column order
+        final_predictions = current_results[
             [
-                "Prediction_Type",
-                "Prediction_Horizon_Years",
-                "Month_Registered",
                 "Zip_Code",
                 "City",
                 "County",
-                "Year",
-                "Month",
-                "Months_Since_Start",
-                "Months_Of_History",
-                "Previous_Month_Registrations",
-                "Current_Month_Previous_Year",
-                "Three_Previous_Months_AVG",
-                "Six_Previous_Months_AVG",
-                "Twelve_Previous_Months_AVG",
-                "Actual_EV_Registrations",
-                "Predicted_EV_Registrations"
+                "Current_Prediction_Month",
+                "Current_Actual_EV_Registrations",
+                "Current_Predicted_EV_Registrations",
+                "Predicted_EV_Registrations_1_Year",
+                "Predicted_EV_Registrations_3_Years",
+                "Predicted_EV_Registrations_5_Years"
             ]
         ]
 
         os.makedirs("results/tables", exist_ok=True)
 
-        all_predictions.to_csv(
+        final_predictions.to_csv(
             "results/tables/ev_registration_predictions.csv",
             index=False
         )
@@ -354,7 +351,6 @@ def train_ev_registration_model():
         print("EV registration predictions saved to results/tables/ev_registration_predictions.csv")
 
         return model
-
 
 
 
