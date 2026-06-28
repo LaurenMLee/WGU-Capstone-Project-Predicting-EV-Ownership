@@ -11,7 +11,7 @@ def train_ev_registration_model():
     # Load cleaned registration data (monthlyregistrations_clean.csv)
     monthly_data = pd.read_csv("data/processed_data/monthlyregistrations_clean.csv", dtype={"Zip_Code": str})
 
-    # Print Start Message
+    # Display Start Message
     print("Model Training Started")
     print("Rows loaded: ", len(monthly_data))
 
@@ -31,8 +31,6 @@ def train_ev_registration_model():
     # Create time index to calculate time from start of data range
     monthly_data["Months_Since_Start"] = (
     (monthly_data["Year"] - monthly_data["Year"].min()) * 12 + monthly_data["Month"])
-
-
 
     # Count the no of months of data each zipcode has
     monthly_data["Months_Of_History"] = monthly_data.groupby("Zip_Code").cumcount()
@@ -326,31 +324,31 @@ def train_ev_registration_model():
             ignore_index=True
         )
 
-        # Arrange final column order
-        final_predictions = current_results[
-            [
-                "Zip_Code",
-                "City",
-                "County",
-                "Current_Prediction_Month",
-                "Current_Actual_EV_Registrations",
-                "Current_Predicted_EV_Registrations",
-                "Predicted_EV_Registrations_1_Year",
-                "Predicted_EV_Registrations_3_Years",
-                "Predicted_EV_Registrations_5_Years"
-            ]
+    # Arrange final column order
+    final_predictions = current_results[
+        [
+            "Zip_Code",
+            "City",
+            "County",
+            ## "Current_Prediction_Month",
+            "Current_Actual_EV_Registrations",
+            "Current_Predicted_EV_Registrations",
+            "Predicted_EV_Registrations_1_Year",
+            "Predicted_EV_Registrations_3_Years",
+            "Predicted_EV_Registrations_5_Years"
         ]
+    ]
 
-        os.makedirs("results/tables", exist_ok=True)
+    os.makedirs("results/tables", exist_ok=True)
 
-        final_predictions.to_csv(
-            "results/tables/ev_registration_predictions.csv",
-            index=False
-        )
+    final_predictions.to_csv(
+        "results/tables/ev_registration_predictions.csv",
+        index=False
+    )
 
-        print("EV registration predictions saved to results/tables/ev_registration_predictions.csv")
+    print("EV registration predictions saved to results/tables/ev_registration_predictions.csv")
 
-        return model
+    return model
 
 
 
