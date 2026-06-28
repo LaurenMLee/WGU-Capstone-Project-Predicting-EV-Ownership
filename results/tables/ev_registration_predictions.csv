@@ -1,0 +1,620 @@
+Zip_Code,City,County,Current_Actual_EV_Registrations,Current_Predicted_EV_Registrations,Predicted_EV_Registrations_1_Year,Predicted_EV_Registrations_3_Years,Predicted_EV_Registrations_5_Years
+20601,Waldorf,Charles County,484,493,631,1056,1769
+20602,Waldorf,Charles County,380,385,526,829,1226
+20603,Waldorf,Charles County,762,768,897,1015,1015
+20604,Waldorf,Charles County,0,0,0,0,0
+20606,Abell,Saint Mary's County,4,3,4,4,4
+20607,Accokeek,Prince George's County,427,427,552,910,1232
+20608,Aquasco,Prince George's County,12,12,13,13,13
+20609,Avenue,Saint Mary's County,8,8,8,8,8
+20610,Barstow,Calvert County,0,0,0,0,0
+20611,Bel Alton,Charles County,13,12,13,13,13
+20612,Benedict,Charles County,3,3,3,3,3
+20613,Brandywine,Prince George's County,588,588,761,1160,1592
+20615,Broomes Island,Calvert County,5,5,5,5,5
+20616,Bryans Road,Charles County,148,153,217,382,663
+20617,Bryantown,Charles County,17,18,23,39,69
+20618,Bushwood,Saint Mary's County,9,7,13,13,13
+20619,California,Saint Mary's County,303,309,433,749,1231
+20620,Callaway,Saint Mary's County,19,20,25,44,56
+20621,Chaptico,Saint Mary's County,12,13,13,13,13
+20622,Charlotte Hall,Saint Mary's County,50,51,64,130,248
+20623,Cheltenham,Prince George's County,56,56,62,136,260
+20624,Clements,Saint Mary's County,4,4,4,4,4
+20625,Cobb Island,Charles County,8,7,8,8,8
+20626,Coltons Point,Saint Mary's County,3,3,3,3,3
+20627,Compton,Saint Mary's County,0,0,0,0,0
+20628,Dameron,Saint Mary's County,17,16,27,44,56
+20629,Dowell,Calvert County,2,2,2,2,2
+20630,Drayden,Saint Mary's County,18,16,21,32,56
+20632,Faulkner,Charles County,4,4,4,4,4
+20634,Great Mills,Saint Mary's County,105,108,150,280,527
+20635,Helen,Saint Mary's County,0,0,0,0,0
+20636,Hollywood,Saint Mary's County,203,210,273,521,841
+20637,Hughesville,Charles County,143,141,212,382,663
+20639,Huntingtown,Calvert County,342,340,471,784,1248
+20640,Indian Head,Charles County,141,144,205,354,621
+20643,Ironsides,Charles County,0,0,0,0,0
+20645,Issue,Charles County,21,22,28,49,94
+20646,La Plata,Charles County,471,470,610,981,1624
+20650,Leonardtown,Saint Mary's County,337,338,463,772,1225
+20653,Lexington Park,Saint Mary's County,310,307,430,744,1104
+20656,Loveville,Saint Mary's County,0,0,0,0,0
+20657,Lusby,Calvert County,267,272,354,621,932
+20658,Marbury,Charles County,18,20,27,48,87
+20659,Mechanicsville,Saint Mary's County,218,222,299,559,965
+20660,Morganza,Saint Mary's County,0,0,0,0,0
+20661,Mount Victoria,Charles County,0,0,0,0,0
+20662,Nanjemoy,Charles County,26,26,32,61,127
+20664,Newburg,Charles County,37,37,51,94,193
+20667,Park Hall,Saint Mary's County,3,3,3,3,3
+20670,Patuxent River,Saint Mary's County,8,6,11,13,13
+20674,Piney Point,Saint Mary's County,26,27,38,56,56
+20675,Pomfret,Charles County,39,38,44,84,176
+20676,Port Republic,Calvert County,73,73,102,201,350
+20677,Port Tobacco,Charles County,58,62,87,181,332
+20678,Prince Frederick,Calvert County,198,203,264,479,820
+20680,Ridge,Saint Mary's County,9,8,12,13,13
+20682,Rock Point,Charles County,0,0,0,0,0
+20684,Saint Inigoes,Saint Mary's County,29,31,43,56,56
+20685,Saint Leonard,Calvert County,107,110,149,280,527
+20686,Saint Marys City,Saint Mary's County,3,3,3,3,3
+20687,Scotland,Saint Mary's County,4,4,4,4,4
+20688,Solomons,Calvert County,58,59,75,153,291
+20689,Sunderland,Calvert County,46,48,63,121,236
+20690,Tall Timbers,Saint Mary's County,29,31,39,56,56
+20692,Valley Lee,Saint Mary's County,6,6,6,6,6
+20693,Welcome,Charles County,18,19,27,49,94
+20695,White Plains,Charles County,437,430,564,929,1481
+20697,Southern Md Facility,Prince George's County,0,0,0,0,0
+20701,Annapolis Junction,Howard County,27,28,39,61,118
+20703,Lanham,Prince George's County,0,0,0,0,0
+20704,Beltsville,Prince George's County,0,0,0,0,0
+20705,Beltsville,Prince George's County,536,550,663,1030,1424
+20706,Lanham,Prince George's County,642,646,818,1013,1015
+20707,Laurel,Prince George's County,827,820,989,1412,2400
+20708,Laurel,Prince George's County,364,367,496,874,1195
+20709,Laurel,Prince George's County,0,0,0,0,0
+20710,Bladensburg,Prince George's County,54,56,69,159,321
+20711,Lothian,Anne Arundel County,95,97,130,252,458
+20712,Mount Rainier,Prince George's County,125,127,181,348,646
+20714,North Beach,Calvert County,78,81,108,219,380
+20715,Bowie,Prince George's County,625,631,805,1163,1794
+20716,Bowie,Prince George's County,627,633,834,1204,1879
+20717,Bowie,Prince George's County,2,2,2,2,2
+20718,Bowie,Prince George's County,0,0,0,0,0
+20719,Bowie,Prince George's County,0,0,0,0,0
+20720,Bowie,Prince George's County,791,791,919,1015,1015
+20721,Bowie,Prince George's County,918,903,1128,1624,3025
+20722,Brentwood,Prince George's County,112,115,169,307,586
+20723,Laurel,Howard County,1517,1534,2006,3523,3978
+20724,Laurel,Anne Arundel County,495,496,645,1023,1638
+20725,Laurel,Prince George's County,2,2,2,2,2
+20726,Laurel,Prince George's County,0,0,0,0,0
+20731,Capitol Heights,Prince George's County,0,0,0,0,0
+20732,Chesapeake Beach,Calvert County,253,262,340,616,1041
+20733,Churchton,Anne Arundel County,51,55,67,130,252
+20735,Clinton,Prince George's County,688,699,857,1168,1848
+20736,Owings,Calvert County,208,214,272,520,842
+20737,Riverdale,Prince George's County,219,220,302,574,954
+20738,Riverdale,Prince George's County,0,0,0,0,0
+20740,College Park,Prince George's County,533,537,663,1027,1369
+20741,College Park,Prince George's County,0,0,0,0,0
+20742,College Park,Prince George's County,2,2,2,2,2
+20743,Capitol Heights,Prince George's County,512,515,663,1051,1424
+20744,Fort Washington,Prince George's County,1012,1022,1015,1015,1015
+20745,Oxon Hill,Prince George's County,426,434,552,910,1232
+20746,Suitland,Prince George's County,341,350,481,806,1168
+20747,District Heights,Prince George's County,288,294,397,683,1003
+20748,Temple Hills,Prince George's County,379,376,521,850,1195
+20749,Fort Washington,Prince George's County,0,0,0,0,0
+20750,Oxon Hill,Prince George's County,0,0,0,0,0
+20751,Deale,Anne Arundel County,47,46,61,115,230
+20752,Suitland,Prince George's County,2,2,2,2,2
+20753,District Heights,Prince George's County,0,0,0,0,0
+20754,Dunkirk,Calvert County,154,158,219,380,660
+20755,Fort George G Meade,Anne Arundel County,124,130,175,310,565
+20757,Temple Hills,Prince George's County,0,0,0,0,0
+20758,Friendship,Anne Arundel County,17,16,18,18,18
+20759,Fulton,Howard County,742,747,894,1015,1015
+20762,Andrews Air Force Base,Prince George's County,25,28,38,69,143
+20763,Savage,Howard County,61,65,88,176,309
+20764,Shady Side,Anne Arundel County,55,54,72,136,263
+20765,Galesville,Anne Arundel County,10,20,27,39,53
+20768,Greenbelt,Prince George's County,0,0,0,0,0
+20769,Glenn Dale,Prince George's County,269,268,373,663,1030
+20770,Greenbelt,Prince George's County,1318,1295,1714,3139,3978
+20771,Greenbelt,Prince George's County,6,6,6,6,6
+20772,Upper Marlboro,Prince George's County,1518,1544,2114,3781,3978
+20773,Upper Marlboro,Prince George's County,0,0,0,0,0
+20774,Upper Marlboro,Prince George's County,1320,1344,1713,3139,3978
+20775,Upper Marlboro,Prince George's County,0,0,0,0,0
+20776,Harwood,Anne Arundel County,71,73,98,195,357
+20777,Highland,Howard County,321,334,440,749,1208
+20778,West River,Anne Arundel County,57,58,73,140,266
+20779,Tracys Landing,Anne Arundel County,34,36,43,69,133
+20781,Hyattsville,Prince George's County,276,273,495,1041,1424
+20782,Hyattsville,Prince George's County,530,527,663,1030,1424
+20783,Hyattsville,Prince George's County,234,236,325,945,1232
+20784,Hyattsville,Prince George's County,207,207,283,795,1195
+20785,Hyattsville,Prince George's County,522,516,661,1063,1425
+20787,Hyattsville,Prince George's County,0,0,0,0,0
+20788,Hyattsville,Prince George's County,0,0,0,0,0
+20790,Capitol Heights,Prince George's County,0,0,0,0,0
+20791,Capitol Heights,Prince George's County,0,0,0,0,0
+20792,Upper Marlboro,Prince George's County,0,0,0,0,0
+20794,Jessup,Howard County,348,349,479,797,1247
+20797,Southern Md Facility,Prince George's County,0,0,0,0,0
+20799,Capitol Heights,Prince George's County,0,0,0,0,0
+20810,Bethesda,Montgomery County,0,0,0,0,0
+20811,Bethesda,Montgomery County,0,0,0,0,0
+20812,Glen Echo,Montgomery County,34,36,49,88,175
+20813,Bethesda,Montgomery County,0,0,0,0,0
+20814,Bethesda,Montgomery County,2105,2150,2826,3978,3978
+20815,Chevy Chase,Montgomery County,2163,2192,2902,3978,3978
+20816,Bethesda,Montgomery County,1312,1354,1711,3137,3978
+20817,Bethesda,Montgomery County,3556,3732,3978,3978,3978
+20818,Cabin John,Montgomery County,200,205,266,490,829
+20824,Bethesda,Montgomery County,1,1,1,1,1
+20825,Chevy Chase,Montgomery County,0,0,0,0,0
+20827,Bethesda,Montgomery County,0,0,0,0,0
+20830,Olney,Montgomery County,0,0,0,0,0
+20832,Olney,Montgomery County,806,802,959,1483,2677
+20833,Brookeville,Montgomery County,386,399,520,843,1313
+20837,Poolesville,Montgomery County,357,363,488,829,1269
+20838,Barnesville,Montgomery County,8,8,8,8,8
+20839,Beallsville,Montgomery County,9,10,12,14,14
+20841,Boyds,Montgomery County,650,660,815,1224,2160
+20842,Dickerson,Montgomery County,94,94,132,250,457
+20847,Rockville,Montgomery County,0,0,0,0,0
+20848,Rockville,Montgomery County,0,0,0,0,0
+20849,Rockville,Montgomery County,0,0,0,0,0
+20850,Rockville,Montgomery County,4973,3984,3984,3984,3984
+20851,Rockville,Montgomery County,338,346,469,825,1415
+20852,Rockville,Montgomery County,2193,2228,3025,3980,3980
+20853,Rockville,Montgomery County,939,953,1015,1015,1015
+20854,Potomac,Montgomery County,4505,3976,3976,3976,3976
+20855,Derwood,Montgomery County,1472,1503,1975,3527,3978
+20857,Rockville,Montgomery County,0,0,0,0,0
+20859,Potomac,Montgomery County,4,4,4,4,4
+20860,Sandy Spring,Montgomery County,108,110,158,294,551
+20861,Ashton,Montgomery County,192,200,259,490,816
+20862,Brinklow,Montgomery County,27,28,39,61,118
+20866,Burtonsville,Montgomery County,372,379,508,829,1269
+20868,Spencerville,Montgomery County,24,25,32,55,93
+20871,Clarksburg,Montgomery County,2253,2301,3143,3978,3978
+20872,Damascus,Montgomery County,361,372,493,815,1248
+20874,Germantown,Montgomery County,1661,1696,2241,3978,3978
+20875,Germantown,Montgomery County,1,1,1,1,1
+20876,Germantown,Montgomery County,701,706,825,1225,2160
+20877,Gaithersburg,Montgomery County,648,647,815,1224,2160
+20878,Gaithersburg,Montgomery County,3673,3834,3978,3978,3978
+20879,Gaithersburg,Montgomery County,658,656,829,1248,2192
+20880,Washington Grove,Montgomery County,32,32,45,67,130
+20882,Gaithersburg,Montgomery County,673,687,839,1269,2241
+20883,Gaithersburg,Montgomery County,0,0,0,0,0
+20884,Gaithersburg,Montgomery County,0,0,0,0,0
+20885,Gaithersburg,Montgomery County,1,1,1,1,1
+20886,Montgomery Village,Montgomery County,675,678,842,1269,2241
+20889,Bethesda,Montgomery County,4,4,4,4,4
+20891,Kensington,Montgomery County,0,0,0,0,0
+20892,Bethesda,Montgomery County,0,0,0,0,0
+20894,Bethesda,Montgomery County,0,0,0,0,0
+20895,Kensington,Montgomery County,1067,1056,1426,2531,3978
+20896,Garrett Park,Montgomery County,89,92,115,222,406
+20897,Suburb Maryland Fac,Montgomery County,0,0,0,0,0
+20898,Gaithersburg,Montgomery County,1,1,1,1,1
+20899,Gaithersburg,Montgomery County,0,0,0,0,0
+20901,Silver Spring,Montgomery County,1064,1062,1379,2405,3978
+20902,Silver Spring,Montgomery County,1229,1255,1592,2901,3978
+20903,Silver Spring,Montgomery County,263,265,354,649,1032
+20904,Silver Spring,Montgomery County,1290,1293,1667,3093,3978
+20905,Silver Spring,Montgomery County,666,682,844,1268,2241
+20906,Silver Spring,Montgomery County,1410,1421,1809,3209,3978
+20907,Silver Spring,Montgomery County,0,0,0,0,0
+20908,Silver Spring,Montgomery County,0,0,0,0,0
+20910,Silver Spring,Montgomery County,1628,1674,2192,3969,3978
+20911,Silver Spring,Montgomery County,0,0,0,0,0
+20912,Takoma Park,Montgomery County,936,931,1015,1015,1015
+20913,Takoma Park,Montgomery County,0,0,0,0,0
+20914,Silver Spring,Montgomery County,0,0,0,0,0
+20915,Silver Spring,Montgomery County,0,0,0,0,0
+20916,Silver Spring,Montgomery County,0,0,0,0,0
+20918,Silver Spring,Montgomery County,0,0,0,0,0
+20993,Silver Spring,Montgomery County,0,0,0,0,0
+20997,Silver Spring,Montgomery County,0,0,0,0,0
+21001,Aberdeen,Harford County,434,426,559,965,1521
+21005,Aberdeen Proving Ground,Harford County,33,32,50,88,175
+21009,Abingdon,Harford County,487,495,616,970,1521
+21010,Gunpowder,Harford County,4,4,4,4,4
+21012,Arnold,Anne Arundel County,591,594,744,1024,1012
+21013,Baldwin,Baltimore County,117,122,176,323,586
+21014,Bel Air,Harford County,589,596,760,1129,1879
+21015,Bel Air,Harford County,712,706,885,1314,2288
+21017,Belcamp,Harford County,66,66,93,187,347
+21018,Benson,Harford County,0,0,0,0,0
+21020,Boring,Baltimore County,0,0,0,0,0
+21022,Brooklandville,Baltimore County,2,2,2,2,2
+21023,Butler,Baltimore County,6,6,6,6,6
+21027,Chase,Baltimore County,0,0,0,0,0
+21028,Churchville,Harford County,73,75,104,215,382
+21029,Clarksville,Howard County,1243,1254,1622,3025,3978
+21030,Cockeysville,Baltimore County,659,661,829,1355,2288
+21031,Hunt Valley,Baltimore County,89,95,121,235,445
+21032,Crownsville,Anne Arundel County,336,345,470,805,1225
+21034,Darlington,Harford County,41,40,51,93,195
+21035,Davidsonville,Anne Arundel County,324,334,447,783,1248
+21036,Dayton,Howard County,187,190,253,493,832
+21037,Edgewater,Anne Arundel County,600,607,758,1020,1012
+21040,Edgewood,Harford County,213,206,277,521,862
+21041,Ellicott City,Howard County,0,0,0,0,0
+21042,Ellicott City,Howard County,2878,2971,3873,3978,3978
+21043,Ellicott City,Howard County,2385,2423,3209,3978,3978
+21044,Columbia,Howard County,1795,1834,2399,3978,3978
+21045,Columbia,Howard County,1196,1206,1520,2674,3978
+21046,Columbia,Howard County,576,585,749,1208,2006
+21047,Fallston,Harford County,267,266,354,615,977
+21048,Finksburg,Carroll County,272,272,373,663,1063
+21050,Forest Hill,Harford County,294,286,395,664,983
+21051,Fork,Baltimore County,12,12,14,28,48
+21052,Fort Howard,Baltimore County,3,4,3,3,3
+21053,Freeland,Baltimore County,58,60,78,158,309
+21054,Gambrills,Anne Arundel County,520,530,645,965,1012
+21056,Gibson Island,Anne Arundel County,19,20,27,48,87
+21057,Glen Arm,Baltimore County,110,107,158,309,564
+21060,Glen Burnie,Anne Arundel County,745,745,895,1012,1012
+21061,Glen Burnie,Anne Arundel County,518,530,640,953,1012
+21062,Glen Burnie,Anne Arundel County,12,13,12,12,12
+21065,Hunt Valley,Baltimore County,0,0,0,0,0
+21071,Glyndon,Baltimore County,7,8,8,8,8
+21074,Hampstead,Carroll County,159,163,225,412,704
+21075,Elkridge,Howard County,1280,1298,1665,3056,3978
+21076,Hanover,Anne Arundel County,1175,1954,1912,3379,3978
+21077,Harmans,Anne Arundel County,7,9,23,28,28
+21078,Havre De Grace,Harford County,420,436,550,857,1268
+21082,Hydes,Baltimore County,11,12,14,14,14
+21084,Jarrettsville,Harford County,88,92,127,252,484
+21085,Joppa,Harford County,236,239,321,597,1007
+21087,Kingsville,Baltimore County,119,123,176,323,586
+21088,Lineboro,Carroll County,0,0,0,0,0
+21090,Linthicum Heights,Anne Arundel County,1083,1134,1418,2111,3723
+21092,Long Green,Baltimore County,0,0,0,0,0
+21093,Lutherville Timonium,Baltimore County,1181,1250,1568,2901,3978
+21094,Lutherville Timonium,Baltimore County,0,0,0,0,0
+21098,Hanover,Anne Arundel County,0,0,0,0,0
+21102,Manchester,Carroll County,142,142,195,349,616
+21104,Marriottsville,Carroll County,314,321,444,773,1230
+21105,Maryland Line,Baltimore County,0,0,0,0,0
+21106,Mayo,Anne Arundel County,0,0,0,0,0
+21108,Millersville,Anne Arundel County,602,606,758,1020,1012
+21111,Monkton,Baltimore County,168,170,230,445,760
+21113,Odenton,Anne Arundel County,1111,1134,1424,2526,3978
+21114,Crofton,Anne Arundel County,573,589,734,1026,1012
+21117,Owings Mills,Baltimore County,1814,1857,2451,3978,3978
+21120,Parkton,Baltimore County,202,207,266,486,797
+21122,Pasadena,Anne Arundel County,977,969,1204,2111,3723
+21123,Pasadena,Anne Arundel County,0,0,0,0,0
+21128,Perry Hall,Baltimore County,419,425,563,946,1664
+21130,Perryman,Harford County,2,2,2,2,2
+21131,Phoenix,Baltimore County,323,326,460,779,1322
+21132,Pylesville,Harford County,33,36,50,88,175
+21133,Randallstown,Baltimore County,404,403,536,841,1355
+21136,Reisterstown,Baltimore County,916,924,1153,2160,3852
+21139,Riderwood,Baltimore County,0,0,0,0,0
+21140,Riva,Anne Arundel County,109,114,158,293,552
+21144,Severn,Anne Arundel County,948,952,1013,1012,1012
+21146,Severna Park,Anne Arundel County,1039,1020,1268,2193,3930
+21150,Simpsonville,Howard County,0,0,0,0,0
+21152,Sparks Glencoe,Baltimore County,168,175,238,427,785
+21153,Stevenson,Baltimore County,60,61,84,169,323
+21154,Street,Harford County,74,73,107,219,406
+21155,Upperco,Baltimore County,55,56,72,139,280
+21156,Upper Falls,Baltimore County,5,5,5,5,5
+21157,Westminster,Carroll County,519,528,655,983,1592
+21158,Westminster,Carroll County,301,301,433,749,1231
+21160,Whiteford,Harford County,18,18,28,48,88
+21161,White Hall,Harford County,87,92,127,252,484
+21162,White Marsh,Baltimore County,139,141,206,353,615
+21163,Woodstock,Howard County,415,427,537,878,1381
+21201,Baltimore,Baltimore City,284,290,397,663,817
+21202,Baltimore,Baltimore City,356,354,487,791,885
+21203,Baltimore,Baltimore City,0,0,0,0,0
+21204,Towson,Baltimore County,645,663,816,1321,2241
+21205,Baltimore,Baltimore City,81,82,108,220,406
+21206,Baltimore,Baltimore City,346,354,479,791,885
+21207,Gwynn Oak,Baltimore County,457,464,597,970,1714
+21208,Pikesville,Baltimore County,981,982,1015,1015,1015
+21209,Baltimore,Baltimore City,827,831,890,885,885
+21210,Baltimore,Baltimore City,581,591,723,817,817
+21211,Baltimore,Baltimore City,465,471,598,889,885
+21212,Baltimore,Baltimore City,786,799,817,817,817
+21213,Baltimore,Baltimore City,246,245,321,598,889
+21214,Baltimore,Baltimore City,284,286,382,655,890
+21215,Baltimore,Baltimore City,436,455,563,818,817
+21216,Baltimore,Baltimore City,158,167,226,434,757
+21217,Baltimore,Baltimore City,287,291,381,663,817
+21218,Baltimore,Baltimore City,592,589,746,887,885
+21219,Sparrows Point,Baltimore County,102,110,153,309,586
+21220,Middle River,Baltimore County,650,650,816,1013,1015
+21221,Essex,Baltimore County,372,382,508,832,1425
+21222,Dundalk,Baltimore County,371,376,508,832,1424
+21223,Baltimore,Baltimore City,113,118,169,309,564
+21224,Baltimore,Baltimore City,907,885,1076,1794,3205
+21225,Brooklyn,Baltimore City,229,230,302,574,952
+21226,Curtis Bay,Anne Arundel County,77,75,110,223,406
+21227,Halethorpe,Baltimore County,325,334,459,772,1354
+21228,Catonsville,Baltimore County,1033,1023,1425,2452,3978
+21229,Baltimore,Baltimore City,372,374,508,801,817
+21230,Baltimore,Baltimore City,994,1000,1013,1014,1014
+21231,Baltimore,Baltimore City,367,366,508,813,885
+21233,Baltimore,Baltimore City,0,0,0,0,0
+21234,Parkville,Baltimore County,714,722,893,1409,2400
+21235,Baltimore,Baltimore City,1,1,1,1,1
+21236,Nottingham,Baltimore County,486,485,615,983,1714
+21237,Rosedale,Baltimore County,416,418,537,841,1355
+21239,Baltimore,Baltimore City,193,197,259,488,791
+21240,Baltimore,Anne Arundel County,466,550,648,814,814
+21241,Baltimore,Baltimore City,0,0,0,0,0
+21244,Windsor Mill,Baltimore County,575,588,742,1024,1015
+21250,Baltimore,Baltimore County,19,21,28,51,98
+21251,Baltimore,Baltimore City,0,0,0,0,0
+21252,Baltimore,Baltimore County,0,0,0,0,0
+21263,Baltimore,Baltimore City,0,0,0,0,0
+21264,Baltimore,Baltimore City,0,0,0,0,0
+21265,Baltimore,Baltimore City,0,0,0,0,0
+21268,Baltimore,Baltimore City,0,0,0,0,0
+21270,Baltimore,Baltimore City,0,0,0,0,0
+21273,Baltimore,Baltimore City,0,0,0,0,0
+21274,Baltimore,Baltimore City,0,0,0,0,0
+21275,Baltimore,Baltimore City,0,0,0,0,0
+21278,Baltimore,Baltimore City,0,0,0,0,0
+21279,Baltimore,Baltimore City,0,0,0,0,0
+21280,Baltimore,Baltimore City,0,0,0,0,0
+21281,Baltimore,Baltimore City,0,0,0,0,0
+21282,Baltimore,Baltimore County,0,0,0,0,0
+21283,Baltimore,Baltimore City,0,0,0,0,0
+21284,Baltimore,Baltimore County,0,0,0,0,0
+21285,Baltimore,Baltimore County,0,0,0,0,0
+21286,Towson,Baltimore County,501,515,649,1027,1794
+21287,Baltimore,Baltimore City,1,1,1,1,1
+21288,Baltimore,Baltimore City,0,0,0,0,0
+21289,Baltimore,Baltimore City,0,0,0,0,0
+21290,Baltimore,Baltimore City,0,0,0,0,0
+21297,Baltimore,Baltimore City,0,0,0,0,0
+21298,Baltimore,Baltimore City,0,0,0,0,0
+21401,Annapolis,Anne Arundel County,1311,1320,1674,3056,3978
+21402,Annapolis,Anne Arundel County,10,14,18,18,18
+21403,Annapolis,Anne Arundel County,967,973,1012,1012,1012
+21404,Annapolis,Anne Arundel County,2,2,2,2,2
+21405,Annapolis,Anne Arundel County,30,31,43,72,136
+21409,Annapolis,Anne Arundel County,682,702,839,1012,1012
+21411,Annapolis,Anne Arundel County,0,0,0,0,0
+21412,Annapolis,Anne Arundel County,1,1,1,1,1
+21501,Cumberland,Allegany County,0,0,0,0,0
+21502,Cumberland,Allegany County,712,705,899,1425,2452
+21503,Cumberland,Allegany County,0,0,0,0,0
+21504,Cumberland,Allegany County,0,0,0,0,0
+21505,Cumberland,Allegany County,0,0,0,0,0
+21520,Accident,Garrett County,13,13,14,14,14
+21521,Barton,Allegany County,3,3,3,3,3
+21522,Bittinger,Garrett County,0,0,0,0,0
+21523,Bloomington,Garrett County,0,0,0,0,0
+21524,Corriganville,Allegany County,1,1,1,1,1
+21528,Eckhart Mines,Allegany County,0,0,0,0,0
+21529,Ellerslie,Allegany County,4,4,4,4,4
+21530,Flintstone,Allegany County,6,6,6,6,6
+21531,Friendsville,Garrett County,9,11,14,14,14
+21532,Frostburg,Allegany County,80,82,108,219,380
+21536,Grantsville,Garrett County,14,13,14,14,14
+21538,Kitzmiller,Garrett County,1,1,1,1,1
+21539,Lonaconing,Allegany County,2,2,2,2,2
+21540,Luke,Allegany County,0,0,0,0,0
+21541,Mc Henry,Garrett County,30,32,38,61,114
+21542,Midland,Allegany County,0,0,0,0,0
+21543,Midlothian,Allegany County,0,0,0,0,0
+21545,Mount Savage,Allegany County,4,4,4,4,4
+21550,Oakland,Garrett County,75,78,110,226,412
+21555,Oldtown,Allegany County,8,8,8,8,8
+21556,Pinto,Allegany County,0,0,0,0,0
+21557,Rawlings,Allegany County,8,8,8,8,8
+21560,Spring Gap,Allegany County,0,0,0,0,0
+21561,Swanton,Garrett County,27,27,37,57,104
+21562,Westernport,Allegany County,6,5,6,6,6
+21601,Easton,Talbot County,448,467,598,970,1592
+21606,Easton,Talbot County,0,0,0,0,0
+21607,Barclay,Queen Anne's County,3,3,3,3,3
+21609,Bethlehem,Caroline County,0,0,0,0,0
+21610,Betterton,Kent County,3,3,3,3,3
+21612,Bozman,Talbot County,7,7,7,7,7
+21613,Cambridge,Dorchester County,182,184,245,439,749
+21617,Centreville,Queen Anne's County,162,170,225,392,663
+21619,Chester,Queen Anne's County,210,217,279,527,829
+21620,Chestertown,Kent County,191,198,259,471,784
+21622,Church Creek,Dorchester County,3,3,3,3,3
+21623,Church Hill,Queen Anne's County,25,27,39,63,121
+21624,Claiborne,Talbot County,3,3,3,3,3
+21625,Cordova,Talbot County,24,24,28,48,83
+21626,Crapo,Dorchester County,0,0,0,0,0
+21627,Crocheron,Dorchester County,1,1,1,1,1
+21628,Crumpton,Queen Anne's County,5,5,5,5,5
+21629,Denton,Caroline County,83,87,115,231,433
+21631,East New Market,Dorchester County,16,18,18,18,18
+21632,Federalsburg,Caroline County,14,16,14,20,37
+21634,Fishing Creek,Dorchester County,0,0,0,0,0
+21635,Galena,Kent County,27,27,36,44,65
+21636,Goldsboro,Caroline County,3,3,3,3,3
+21638,Grasonville,Queen Anne's County,117,116,176,309,583
+21639,Greensboro,Caroline County,29,28,39,61,114
+21640,Henderson,Caroline County,5,4,5,5,5
+21641,Hillsboro,Caroline County,0,0,0,0,0
+21643,Hurlock,Dorchester County,36,33,48,73,150
+21644,Ingleside,Queen Anne's County,1,1,1,1,1
+21645,Kennedyville,Kent County,13,13,14,14,14
+21647,Mcdaniel,Talbot County,2,2,2,2,2
+21648,Madison,Dorchester County,3,2,3,3,3
+21649,Marydel,Caroline County,7,7,7,7,7
+21650,Massey,Kent County,0,0,0,0,0
+21651,Millington,Kent County,15,16,16,27,48
+21652,Neavitt,Talbot County,9,10,13,13,13
+21653,Newcomb,Talbot County,2,2,2,2,2
+21654,Oxford,Talbot County,63,67,90,187,332
+21655,Preston,Caroline County,30,32,44,67,130
+21656,Price,Queen Anne's County,0,0,0,0,0
+21657,Queen Anne,Queen Anne's County,16,16,20,39,67
+21658,Queenstown,Queen Anne's County,63,63,88,182,321
+21659,Rhodesdale,Dorchester County,4,4,4,4,4
+21660,Ridgely,Caroline County,20,21,27,48,83
+21661,Rock Hall,Kent County,29,28,39,61,114
+21662,Royal Oak,Talbot County,18,18,27,47,69
+21663,Saint Michaels,Talbot County,88,91,127,249,470
+21664,Secretary,Dorchester County,3,4,3,3,3
+21665,Sherwood,Talbot County,6,6,6,6,6
+21666,Stevensville,Queen Anne's County,293,295,394,704,1027
+21667,Still Pond,Kent County,3,3,3,3,3
+21668,Sudlersville,Queen Anne's County,8,8,8,8,8
+21669,Taylors Island,Dorchester County,1,1,1,1,1
+21670,Templeville,Caroline County,0,0,0,0,0
+21671,Tilghman,Talbot County,13,14,13,13,13
+21672,Toddville,Dorchester County,0,0,0,0,0
+21673,Trappe,Talbot County,52,50,65,133,264
+21675,Wingate,Dorchester County,0,0,0,0,0
+21676,Wittman,Talbot County,4,4,4,4,4
+21677,Woolford,Dorchester County,7,7,7,7,7
+21678,Worton,Kent County,16,16,18,33,61
+21679,Wye Mills,Talbot County,9,8,12,13,13
+21681,Ridgely,Caroline County,0,0,0,0,0
+21682,Ridgely,Caroline County,0,0,0,0,0
+21683,Ridgely,Caroline County,0,0,0,0,0
+21684,Ridgely,Caroline County,0,0,0,0,0
+21685,Ridgely,Caroline County,0,0,0,0,0
+21686,Ridgely,Caroline County,0,0,0,0,0
+21687,Ridgely,Caroline County,0,0,0,0,0
+21688,Ridgely,Caroline County,0,0,0,0,0
+21690,Chestertown,Queen Anne's County,0,0,0,0,0
+21701,Frederick,Frederick County,1207,1202,1521,2673,3978
+21702,Frederick,Frederick County,1163,1183,1439,2608,3978
+21703,Frederick,Frederick County,939,953,1015,1015,1015
+21704,Frederick,Frederick County,1291,1318,1666,3056,3978
+21705,Frederick,Frederick County,0,0,0,0,0
+21709,Frederick,Frederick County,0,0,0,0,0
+21710,Adamstown,Frederick County,149,155,215,385,669
+21711,Big Pool,Washington County,3,3,3,3,3
+21713,Boonsboro,Washington County,129,128,175,308,583
+21714,Braddock Heights,Frederick County,13,13,13,13,13
+21715,Brownsville,Washington County,0,0,0,0,0
+21716,Brunswick,Frederick County,320,321,459,779,1207
+21717,Buckeystown,Frederick County,9,8,12,13,13
+21718,Burkittsville,Frederick County,4,4,4,4,4
+21719,Cascade,Washington County,9,9,12,13,13
+21720,Cavetown,Washington County,1,1,1,1,1
+21721,Chewsville,Washington County,0,0,0,0,0
+21722,Clear Spring,Washington County,31,32,32,32,32
+21723,Cooksville,Howard County,63,64,90,176,309
+21727,Emmitsburg,Frederick County,51,51,69,138,264
+21733,Fairplay,Washington County,18,20,27,43,65
+21734,Funkstown,Washington County,3,3,3,3,3
+21737,Glenelg,Howard County,185,190,251,473,797
+21738,Glenwood,Howard County,217,217,293,540,900
+21740,Hagerstown,Washington County,594,594,758,1132,1879
+21741,Hagerstown,Washington County,0,0,0,0,0
+21742,Hagerstown,Washington County,473,482,610,981,1624
+21746,Hagerstown,Washington County,0,0,0,0,0
+21747,Hagerstown,Washington County,0,0,0,0,0
+21748,Hagerstown,Washington County,0,0,0,0,0
+21749,Hagerstown,Washington County,0,0,0,0,0
+21750,Hancock,Washington County,17,18,22,32,51
+21754,Ijamsville,Frederick County,315,322,439,745,1095
+21755,Jefferson,Frederick County,136,137,195,349,617
+21756,Keedysville,Washington County,54,54,69,140,264
+21757,Keymar,Carroll County,21,22,28,49,88
+21758,Knoxville,Frederick County,93,91,126,248,479
+21759,Ladiesburg,Frederick County,0,0,0,0,0
+21762,Libertytown,Frederick County,5,5,5,5,5
+21765,Lisbon,Howard County,1,1,1,1,1
+21766,Little Orleans,Allegany County,2,2,2,2,2
+21767,Maugansville,Washington County,6,6,6,6,6
+21769,Middletown,Frederick County,386,397,526,886,1414
+21770,Monrovia,Frederick County,485,490,632,1028,1665
+21771,Mount Airy,Frederick County,811,811,931,1015,1015
+21773,Myersville,Frederick County,150,158,217,385,669
+21774,New Market,Frederick County,927,925,1017,1015,1015
+21775,New Midway,Frederick County,0,0,0,0,0
+21776,New Windsor,Carroll County,95,97,138,252,458
+21777,Point Of Rocks,Frederick County,53,52,69,138,264
+21778,Rocky Ridge,Frederick County,10,12,13,13,13
+21779,Rohrersville,Washington County,20,21,28,43,65
+21780,Sabillasville,Frederick County,14,14,16,25,44
+21781,Saint James,Washington County,0,0,0,0,0
+21782,Sharpsburg,Washington County,45,44,54,93,187
+21783,Smithsburg,Washington County,74,77,107,214,382
+21784,Sykesville,Carroll County,1032,1019,1268,2241,3974
+21787,Taneytown,Carroll County,140,133,205,372,648
+21788,Thurmont,Frederick County,108,112,164,305,559
+21790,Tuscarora,Frederick County,3,3,3,3,3
+21791,Union Bridge,Carroll County,78,82,110,226,433
+21792,Unionville,Frederick County,0,0,0,0,0
+21793,Walkersville,Frederick County,168,170,230,417,736
+21794,West Friendship,Howard County,158,162,223,433,749
+21795,Williamsport,Washington County,77,79,106,214,382
+21797,Woodbine,Howard County,355,367,482,797,1247
+21798,Woodsboro,Frederick County,38,38,48,90,175
+21801,Salisbury,Wicomico County,392,396,522,850,1349
+21802,Salisbury,Wicomico County,0,0,0,0,0
+21803,Salisbury,Wicomico County,0,0,0,0,0
+21804,Salisbury,Wicomico County,259,263,349,616,970
+21810,Allen,Wicomico County,0,0,0,0,0
+21811,Berlin,Worcester County,351,354,483,782,1019
+21813,Bishopville,Worcester County,49,47,63,121,207
+21814,Bivalve,Wicomico County,3,3,3,3,3
+21817,Crisfield,Somerset County,22,23,28,48,83
+21821,Deal Island,Somerset County,5,5,5,5,5
+21822,Eden,Worcester County,18,18,26,46,62
+21824,Ewell,Somerset County,0,0,0,0,0
+21826,Fruitland,Wicomico County,51,55,65,133,259
+21829,Girdletree,Worcester County,2,2,2,2,2
+21830,Hebron,Wicomico County,36,36,44,75,154
+21835,Linkwood,Dorchester County,0,0,0,0,0
+21836,Manokin,Somerset County,0,0,0,0,0
+21837,Mardela Springs,Wicomico County,19,20,27,44,75
+21838,Marion Station,Somerset County,11,11,14,19,38
+21840,Nanticoke,Wicomico County,3,3,3,3,3
+21841,Newark,Worcester County,4,4,4,4,4
+21842,Ocean City,Worcester County,202,203,201,201,201
+21843,Ocean City,Worcester County,0,0,0,0,0
+21849,Parsonsburg,Wicomico County,21,18,27,48,86
+21850,Pittsville,Wicomico County,16,18,21,39,62
+21851,Pocomoke City,Worcester County,39,36,48,83,169
+21852,Powellville,Wicomico County,0,0,0,0,0
+21853,Princess Anne,Somerset County,43,46,53,93,187
+21856,Quantico,Wicomico County,6,7,7,7,7
+21857,Rehobeth,Somerset County,0,0,0,0,0
+21861,Sharptown,Wicomico County,5,5,5,5,5
+21862,Showell,Worcester County,0,0,0,0,0
+21863,Snow Hill,Worcester County,35,37,48,73,144
+21864,Stockton,Worcester County,5,5,5,5,5
+21865,Tyaskin,Wicomico County,1,1,1,1,1
+21866,Tylerton,Somerset County,0,0,0,0,0
+21867,Upper Fairmount,Somerset County,0,0,0,0,0
+21869,Vienna,Dorchester County,10,12,13,13,13
+21871,Westover,Somerset County,9,9,12,14,14
+21872,Whaleyville,Worcester County,7,8,7,7,7
+21874,Willards,Wicomico County,5,5,5,5,5
+21875,Delmar,Wicomico County,97,97,138,269,486
+21890,Westover,Somerset County,0,0,0,0,0
+21901,North East,Cecil County,224,222,301,564,929
+21902,Perry Point,Cecil County,0,0,0,0,0
+21903,Perryville,Cecil County,51,51,69,140,264
+21904,Port Deposit,Cecil County,62,63,88,176,309
+21911,Rising Sun,Cecil County,68,71,97,194,350
+21912,Warwick,Cecil County,18,17,23,39,61
+21913,Cecilton,Cecil County,6,6,6,6,6
+21914,Charlestown,Cecil County,12,12,13,13,13
+21915,Chesapeake City,Cecil County,38,40,49,88,176
+21916,Childs,Cecil County,0,0,0,0,0
+21917,Colora,Cecil County,28,28,39,61,121
+21918,Conowingo,Cecil County,27,27,34,55,56
+21919,Earleville,Cecil County,36,37,48,88,176
+21920,Elk Mills,Cecil County,0,0,0,0,0
+21921,Elkton,Cecil County,455,462,597,1007,1713
+21922,Elkton,Cecil County,0,0,0,0,0
+21930,Georgetown,Cecil County,2,2,2,2,2
